@@ -1,0 +1,8 @@
+{
+  "mappings": [
+    "/content/patina-ogilvy-test/:/"
+  ],
+  "includes": [
+    "/content/patina-ogilvy-test/"
+  ]
+}
