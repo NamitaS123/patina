@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+    <title>Page not found</title>
+    <script type="text/javascript">
+      window.isErrorPage = true;
+      window.errorCode = "404";
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Page not found" />
+    <script src="/scripts/scripts.js" type="module"></script>
+
+    <script type="module">
+      import { sampleRUM } from "./scripts/aem.js";
+
+      sampleRUM("404", { source: document.referrer });
+    </script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/colors.css" />
+    <link rel="stylesheet" href="/styles/icons.css" />
+    <link rel="stylesheet" href="/styles/fonts.css" />
+
+    <!-- loading js -->
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+
+    <!-- gsap -->
+    <script src="/scripts/gsap.min.js"></script>
+    <script src="/scripts/ScrollTrigger.min.js"></script>
+    <script src="/scripts/SplitText.min.js"></script>
+    <script src="/scripts/CustomEase.min.js"></script>
+
+    <!-- Other Libraries -->
+    <script defer src="/scripts/lazyload.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="/styles/lazy-styles.css" /> -->
+  </head>
+
+  <body>
+    <header></header>
+    <main class="error" id="error-main">
+      <div class="hero"></div>
+      <div class="header"></div>
+      <div class="promo"></div>
+      <div class="slider-teaser"></div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

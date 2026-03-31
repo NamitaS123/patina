@@ -1,0 +1,16 @@
+.hlx/*
+coverage/*
+logs/*
+node_modules/*
+
+helix-importer-ui
+.DS_Store
+*.bak
+.idea
+
+well-known/*
+
+.env
+
+package-lock.json
+yarn.lock
